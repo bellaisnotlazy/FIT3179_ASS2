@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "CO2 and GHG emission in Asian countries from 2000 to 2008",
+  "width": 300,
+  "height": 200,
+  "data": {
+    "url": "https://raw.githubusercontent.com/bellaisnotlazy/FIT3179_ASS2/main/asia.csv"
+  },
+  "mark": "circle",
+  "encoding": {
+    "y": {"field": "Country", "type": "ordinal"},
+    "x": {"field": "year", "type": "ordinal"},
+    "size": {
+      "field": "CO2 and GHG emission",
+      "type": "quantitative",
+      "aggregate": "sum"
+    }
+  }
+}
