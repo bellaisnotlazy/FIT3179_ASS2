@@ -32,22 +32,22 @@
     <div class="pure-g">
       <div class="pure-u-1-1">
         <h1>Multiple Visualisations</h1>
-        <div id="map(2000)" class="vis-container"></div>
+        <<div id="map(2000).json" class="vis-container"></div>
       </div>
     </div>
-    <div class="pure-g">
+  <div class="pure-g">
       <div class="pure-u-1-1">
         <h1>Multiple Visualisations</h1>
-        <div id="map(2017)" class="vis-container"></div>
+        <<div id="map(2017).json" class="vis-container"></div>
+      </div>
+    </div>
+  <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h1>Multiple Visualisations</h1>
+        <<div id="Bubble Asia.json" class="vis-container"></div>
       </div>
     </div>
     
-    <div class="pure-g">
-      <div class="pure-u-1-1 small-font">
-        <div id="Bubble Asia" class="vis-container"></div>
-      </div>
-    </div>
-
 
   </div> <!-- end page -->
 
@@ -56,16 +56,15 @@
     var specVis2 = "./map(2017).json";
     var specVis3 = "./Bubble Asia.json;
 
-    vegaEmbed('#map(2000)', specVis1, { "actions": false });
+    vegaEmbed('#map(2000).json', specVis1, { "actions": false });
 
-    vegaEmbed('#map(2017)', specVis2, { "actions": false }).then(function (result) {
+    vegaEmbed('#map(2017).json', specVis2, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
-    vegaEmbed('#Bubble Asia', specVis3, { "actions": false }).then(function (result) {
+    vegaEmbed('#Bubble Asia.json', specVis3, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
-
   </script>
 </body>
 
