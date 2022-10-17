@@ -52,16 +52,17 @@
   </div> <!-- end page -->
 
   <script type="text/javascript">
-    var specVis1 = "./normalised-stacked-bars-responsive.json";
-    var specVis2 = "./line-chart-responsive.json";
+    var specVis1 = "./map(2000).json";
+    var specVis2 = "./map(2017).json";
+    var specVis3 = "./Bubble Asia.json;
 
-    vegaEmbed('#map(2000)', specmap(2000), { "actions": false });
+    vegaEmbed('#map(2000)', specVis1, { "actions": false });
 
-    vegaEmbed('#map(2017)', specmap(2017), { "actions": false }).then(function (result) {
+    vegaEmbed('#map(2017)', specVis2, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
-    vegaEmbed('#Bubble Asia', specBubble Asia, { "actions": false }).then(function (result) {
+    vegaEmbed('#Bubble Asia', specVis3, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
